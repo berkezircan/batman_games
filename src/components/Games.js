@@ -15,11 +15,25 @@ const Games = (props) => {
     dispatch(listGames());
   }, [dispatch]);
 
-  console.log(loading);
+  console.log(games);
+
   console.log(games);
   return (
     <Fragment>
       <h1>Batman Games</h1>
+      {loading ? (
+        <h2>Loader</h2>
+      ) : error ? (
+        <p variant="danger">{error}</p>
+      ) : (
+        <Row>
+          {games.map((game) => (
+            <Col key={game.gameID} sm={12} md={6} lg={4} xl={3}>
+              <Game game={game} />
+            </Col>
+          ))}
+        </Row>
+      )}
     </Fragment>
   );
 };
