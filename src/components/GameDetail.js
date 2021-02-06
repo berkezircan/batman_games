@@ -60,7 +60,7 @@ const GameDetail = ({ match }) => {
                     <a
                       href={`https://www.cheapshark.com/redirect?dealID=${deal.dealID}`}
                     >
-                      <Button style={{ width: '100%' }} variant="info">
+                      <Button block variant="info">
                         Discover The Deal
                       </Button>
                     </a>

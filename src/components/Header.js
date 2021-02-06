@@ -17,7 +17,7 @@ const Header = () => {
           {location.pathname.includes('/game/') && (
             <Link to="/">
               <Nav>
-                <Nav.Link>Check Other Games</Nav.Link>
+                <Nav.Link href="#deets">Check Other Games</Nav.Link>
               </Nav>
             </Link>
           )}

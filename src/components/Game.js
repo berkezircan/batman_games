@@ -13,7 +13,11 @@ const Game = ({ game: { thumb, external, gameID, cheapest } }) => {
             Cheapest Price: <strong>{cheapest}</strong>
           </Card.Subtitle>
           <Link to={`/game/${gameID}`}>
-            <Button className="mt-3" variant="info" block>
+            <Button
+              className="mt-3 navigate-button"
+              variant="outline-info"
+              block
+            >
               See Details
             </Button>
           </Link>
