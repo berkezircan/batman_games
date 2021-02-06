@@ -5,15 +5,15 @@ import { Card, Button } from 'react-bootstrap';
 const Game = ({ game: { thumb, external, gameID, cheapest } }) => {
   return (
     <Fragment>
-      <Card className="my-3 p-3">
+      <Card bg="dark" text="white" className="my-3">
         <Card.Img variant="top" style={{ height: '200px' }} src={thumb} />
         <Card.Body>
-          <Card.Title>{external}</Card.Title>
+          <Card.Title color="white">{external}</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">
             Cheapest Price: <strong>{cheapest}</strong>
           </Card.Subtitle>
           <Link to={`/game/${gameID}`}>
-            <Button className="mt-3" variant="primary">
+            <Button className="mt-3" variant="info" block>
               See Details
             </Button>
           </Link>

@@ -17,8 +17,6 @@ const GameDetail = ({ match }) => {
 
   const { game } = currentGame;
 
-  console.log(game);
-
   return (
     <Fragment>
       {currentGame.loading ? (
@@ -45,7 +43,7 @@ const GameDetail = ({ match }) => {
               </h5>
             </div>
           </div>
-          <Table striped bordered hover size="sm">
+          <Table striped bordered hover size="sm" className="text-muted">
             <thead>
               <tr>
                 <th>Price</th>

@@ -17,7 +17,6 @@ export const Games = () => {
 
   return (
     <Fragment>
-      <h1 className="mt-3">Batman Games</h1>
       {loading ? (
         <h2>Loader</h2>
       ) : error ? (
