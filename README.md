@@ -32,3 +32,11 @@ https://www.cheapshark.com/api/1.0/deals?id=tyTH88J0PXRvYALBjV3cNHd5Juq1qKcu4tG4
 BiUCt4%3D // idi verilen fiyatın detayları
 
 ```
+
+### Libraries I Used
+
+- React
+- React-router
+- Redux
+- React Bootstrap
+- Axios
