@@ -11,3 +11,12 @@ body {
     #485563
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}

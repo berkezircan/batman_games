@@ -41,7 +41,7 @@ const GameDetail = ({ match }) => {
                 Cheapest Price Ever: ${game.cheapestPriceEver.price}
               </h5>
               <h5 className="text-muted">
-                Cheapest Date: ${timeConverter(game.cheapestPriceEver.date)}
+                Cheapest Date: {timeConverter(game.cheapestPriceEver.date)}
               </h5>
             </div>
           </div>
