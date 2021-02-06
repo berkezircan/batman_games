@@ -4,10 +4,10 @@
 npm install
 ```
 
-- Run the script
+- Execute app
 
 ```
-npm run build
+npm start
 ```
 
 ### Tasks
