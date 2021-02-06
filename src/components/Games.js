@@ -5,7 +5,7 @@ import Game from './Game';
 
 import { listGames } from '../actions/gameListActions';
 
-const Games = (props) => {
+export const Games = () => {
   const dispatch = useDispatch();
 
   const gameList = useSelector((state) => state.gameList);
@@ -15,12 +15,9 @@ const Games = (props) => {
     dispatch(listGames());
   }, [dispatch]);
 
-  console.log(games);
-
-  console.log(games);
   return (
     <Fragment>
-      <h1>Batman Games</h1>
+      <h1 className="mt-3">Batman Games</h1>
       {loading ? (
         <h2>Loader</h2>
       ) : error ? (

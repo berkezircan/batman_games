@@ -35,7 +35,6 @@ export const listSingleGame = (id) => async (dispatch) => {
     const { data } = await axios.get(
       `https://www.cheapshark.com/api/1.0/games?id=${id}`
     );
-
     dispatch({
       type: SINGLE_GAME_SUCCESS,
       payload: data,

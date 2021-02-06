@@ -25,7 +25,7 @@ export const gameReducer = (state = { game: {} }, action) => {
     case SINGLE_GAME_REQUEST:
       return { loading: true, ...state };
     case SINGLE_GAME_SUCCESS:
-      return { loading: false, game: action.payload };
+      return { loading: false, game: { ...action.payload } };
     case SINGLE_GAME_FAIL:
       return { loading: false, error: action.errorMessage };
 
