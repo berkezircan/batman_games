@@ -7,7 +7,10 @@ import {
   SINGLE_GAME_SUCCESS,
 } from '../constants';
 
-export const gameListReducer = (state = { games: [] }, action) => {
+export const gameListReducer = (
+  state = { games: [], loading: true },
+  action
+) => {
   switch (action.type) {
     case GAME_LIST_REQUEST:
       return { loading: true, games: [] };
@@ -20,10 +23,10 @@ export const gameListReducer = (state = { games: [] }, action) => {
   }
 };
 
-export const gameReducer = (state = { game: {} }, action) => {
+export const gameReducer = (state = { game: {}, loading: true }, action) => {
   switch (action.type) {
     case SINGLE_GAME_REQUEST:
-      return { loading: true, ...state };
+      return { loading: true, game: {} };
     case SINGLE_GAME_SUCCESS:
       return { loading: false, game: { ...action.payload } };
     case SINGLE_GAME_FAIL:

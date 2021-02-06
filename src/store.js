@@ -2,7 +2,6 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-// Reducers
 import { gameListReducer, gameReducer } from './reducers/gameListReducer';
 
 const reducer = combineReducers({
@@ -12,9 +11,7 @@ const reducer = combineReducers({
 
 const middleware = [thunk];
 
-const initialState = {
-  games: [],
-};
+const initialState = {};
 
 const store = createStore(
   reducer,
