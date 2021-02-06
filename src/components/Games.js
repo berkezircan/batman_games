@@ -2,6 +2,7 @@ import React, { useEffect, Fragment } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Game from './Game';
+import Loader from './Loader';
 
 import { listGames } from '../actions/gameListActions';
 
@@ -18,7 +19,7 @@ export const Games = () => {
   return (
     <Fragment>
       {loading ? (
-        <h2>Loader</h2>
+        <Loader />
       ) : error ? (
         <p variant="danger">{error}</p>
       ) : (

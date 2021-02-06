@@ -6,6 +6,8 @@ import { listSingleGame } from '../actions/gameListActions';
 
 import timeConverter from '../utilsFunctions/timeConverter';
 
+import Loader from './Loader';
+
 const GameDetail = ({ match }) => {
   const dispatch = useDispatch();
 
@@ -20,7 +22,7 @@ const GameDetail = ({ match }) => {
   return (
     <Fragment>
       {currentGame.loading ? (
-        <h1>Loading..</h1>
+        <Loader />
       ) : (
         <div className="mt-3">
           <div style={{ display: 'flex' }}>
